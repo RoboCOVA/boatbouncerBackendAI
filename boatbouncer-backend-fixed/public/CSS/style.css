@@ -1,0 +1,147 @@
+:root {
+  --sidebar-bg-color: white;
+  --sidebar-text-color: #dfe5ec;
+}
+
+section[data-css='sidebar'] {
+  background-color: var(--sidebar-bg-color) !important;
+}
+
+/* section[data-css='Boats-show-drawer-content'] > section:nth-of-type(-n + 7) {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+} */
+
+section[data-css='Boats-list-table-wrapper'] > thead tr {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.status-button {
+  padding: 4px;
+  border-radius: 7px;
+  color: #fff;
+  width: 70px;
+  border: none;
+}
+
+.adminjs_NavBar {
+  box-shadow: 0px 4px 8px rgba(57, 73, 86, 0.05);
+  z-index: 99;
+}
+
+section[data-css='topbar'] {
+  height: 6.25rem;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  -webkit-box-align: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  min-width: 0px;
+  font-family: Roboto, sans-serif;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+section[data-css='sidebar-logo'] {
+  /* height: 6.25rem; */
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-width: 0px;
+  font-family: Roboto, sans-serif;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+a[data-css='sidebar-logo'] {
+  /* padding-inline: 0; */
+  padding-left: 0;
+  padding-block: 1.5rem;
+  margin-block: auto;
+}
+
+[data-css*='-list-table-wrapper'] thead > tr > td > * {
+  font-family: 'TTNormsMedium' !important;
+  color: rgb(12, 30, 41);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.adminjs_TableCell {
+  font-family: 'TTNormsMedium' !important;
+  color: rgb(12, 30, 41) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+.adminjs_TableRow > .main {
+  font-family: 'TTNormsMedium' !important;
+  color: rgb(12, 30, 41) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+.adminjs_TableRow,
+tr {
+  background-color: white;
+  border-bottom: 1px solid #f6f7fb;
+}
+
+[data-css*='sidebar'],
+[data-css*='topbar'] {
+  border: none !important;
+}
+
+table {
+  border: 1px solid #f6f7fb !important;
+  box-shadow: 0px 0px 10px 0px rgba(57, 73, 86, 0.05) !important;
+}
+
+.mapboxgl-ctrl-bottom-right {
+  display: none !important;
+}
+
+.mapboxgl-control-container {
+  display: none !important;
+}
+
+.anchor-link {
+  outline: 0;
+  font-size: 16px;
+  color: #4268f6;
+  appearance: none;
+  line-height: 24px;
+  padding-left: 2px;
+  padding: 4px 32px;
+  padding-right: 2px;
+  display: inline-block;
+  -moz-appearance: none;
+  text-decoration: none;
+  vertical-align: middle;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border-color: transparent;
+  -webkit-text-decoration: none;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+}

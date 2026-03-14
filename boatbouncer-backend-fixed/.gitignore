@@ -1,0 +1,13 @@
+node_modules/
+.env
+
+# logs
+logs/
+*.log
+npm-debug.log*
+
+.adminjs/
+logs/
+
+dist/
+build/

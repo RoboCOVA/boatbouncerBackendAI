@@ -1,0 +1,126 @@
+import Bookings from '../../../models/Bookings';
+import { components } from '../components/components';
+
+export const BookingResource = {
+  resource: Bookings,
+  options: {
+    properties: {
+      _id: {
+        isVisible: {
+          list: false,
+          edit: false,
+          show: false,
+          filter: false,
+        },
+      },
+      boatId: {
+        isVisible: {
+          list: false,
+          edit: false,
+          show: false,
+          filter: false,
+        },
+      },
+      boatName: {
+        components: {
+          list: components.BoatId,
+          show: components.BoatId,
+        },
+        isVisible: {
+          list: true,
+          edit: false,
+          show: true,
+          filter: true,
+        },
+      },
+      owner: {
+        isVisible: {
+          list: false,
+          edit: true,
+          show: true,
+          filter: false,
+        },
+      },
+      renter: {
+        isVisible: {
+          list: false,
+          edit: true,
+          show: true,
+          filter: false,
+        },
+      },
+      offerId: {
+        isVisible: {
+          list: false,
+          edit: false,
+          show: true,
+          filter: false,
+        },
+      },
+      conversationId: {
+        isVisible: {
+          list: false,
+          edit: false,
+          show: true,
+          filter: false,
+        },
+      },
+      renterPrice: {
+        isVisible: {
+          list: false,
+          edit: true,
+          show: true,
+          filter: false,
+        },
+      },
+      captainPrice: {
+        isVisible: {
+          list: false,
+          edit: true,
+          show: true,
+          filter: false,
+        },
+      },
+      status: {
+        components: {
+          list: components.StatusButton,
+          show: components.StatusButton,
+        },
+        isVisible: {
+          list: true,
+          edit: true,
+          show: true,
+          filter: true,
+        },
+      },
+      type: {
+        components: {
+          list: components.TypeButton,
+          show: components.TypeButton,
+        },
+        isVisible: {
+          list: true,
+          edit: true,
+          show: true,
+          filter: true,
+        },
+      },
+      createdAt: {
+        isVisible: {
+          list: false,
+          edit: false,
+          show: true,
+          filter: true,
+        },
+      },
+      updatedAt: {
+        isVisible: {
+          list: false,
+          edit: false,
+          show: true,
+          filter: true,
+        },
+      },
+    },
+  },
+};
