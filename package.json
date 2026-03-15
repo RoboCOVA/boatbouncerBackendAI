@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "type": "module",
   "description": "boatbouncer",
-  "main": "src/index.js",
+  "main": "src/index.js --bundle --external:nock --external:aws-sdk --external:mock-aws-s3",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec babel-node src/index.js",
     "lint": "eslint . --ext .js --color -f table",
     "seed": "babel-node src/config/adminSeeder.js",
     "build": "babel ./src -d dist && cp src/config/firebase/firebase-adminsdk.json dist/config/firebase/firebase-adminsdk.json",
+    
     "start:prod": "babel-node dist/index.js"
   },
   "husky": {
