@@ -9,7 +9,7 @@ import passport from 'passport';
 import httpStatus from 'http-status';
 import { Cron } from 'croner';
 import * as environments from './config/environments.js';
-import connectToDb from './config/mongoose.s';
+import connectToDb from './config/mongoose';
 import app from './config/express';
 import passportInit from './config/passport';
 import createServer from './socket';
