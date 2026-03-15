@@ -1,6 +1,7 @@
 {
   "name": "boatbouncer-backend",
   "version": "1.0.0",
+  "type": "module",
   "description": "boatbouncer",
   "main": "src/index.js",
   "scripts": {
