@@ -1,17 +1,16 @@
 {
   "name": "boatbouncer-backend",
   "version": "1.0.0",
-  "type": "module",
+  "type": "commonjs",
   "description": "boatbouncer",
-  "main": "src/index.js --bundle --external:nock --external:aws-sdk --external:mock-aws-s3",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec babel-node src/index.js",
     "lint": "eslint . --ext .js --color -f table",
     "seed": "babel-node src/config/adminSeeder.js",
     "build": "babel ./src -d dist && cp src/config/firebase/firebase-adminsdk.json dist/config/firebase/firebase-adminsdk.json",
-    
-    "start:prod": "babel-node dist/index.js"
+    "start:prod": "node dist/index.js"
   },
   "husky": {
     "hooks": {
@@ -28,7 +27,7 @@
     "url": "https://github.com/RoboCOVA/boatbouncer-backend/issues"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=20.0.0"
   },
   "homepage": "https://github.com/RoboCOVA/boatbouncer-backend#readme",
   "devDependencies": {
@@ -101,5 +100,5 @@
     "twilio": "^5.1.1",
     "winston": "^3.8.2"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "yarn@1.22.22"
 }
